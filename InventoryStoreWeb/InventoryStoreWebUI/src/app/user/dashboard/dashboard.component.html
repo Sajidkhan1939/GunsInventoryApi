@@ -1,0 +1,93 @@
+<form [formGroup]="AddGuns">
+
+  <h1>ADD Guns</h1>
+  <div class="form-group">
+    <fieldset>
+      <label for="name">Name:</label>
+      <input type="text" formControlName="Name">
+      <label for="mail">FirearmType:</label>
+      <input type="email" formControlName="FirearmType">
+      <label for="text">Manufacturer:</label>
+      <input type="text" formControlName="Manufacturer">
+      <label for="text">Model:</label>
+      <input type="text" formControlName="Model">
+      <label for="text">Caliber:</label>
+      <input type="text" formControlName="Caliber">
+      <label for="text">CountryOfOrigin:</label>
+      <input type="text" formControlName="CountryOfOrigin">
+      <label for="text">DateOfPurchase:</label>
+      <input type="text" formControlName="DateOfPurchase">
+      <label for="text">PurchasedStoreName:</label>
+      <input type="text" formControlName="PurchasedStoreName">
+      <label for="text">SerialNo:</label>
+      <input type="text" formControlName="SerialNo">
+      <label for="text">Codition:</label>
+      <input type="text" formControlName="Codition">
+      <label for="text">StoredLocation:</label>
+      <input type="text" formControlName="StoredLocation">
+      <label for="text">PurchasePrice:</label>
+      <input type="text" formControlName="PurchasePrice">
+      <label for="text">InsuranceValue:</label>
+      <input type="text" formControlName="InsuranceValue">
+      <label for="text">Action:</label>
+      <input type="text" formControlName="Action">
+      <label for="text">OAL:</label>
+      <input type="text" formControlName="OAL">
+      <label for="text">Weight:</label>
+      <input type="text" formControlName="Weight">
+      <label for="text">TwistRate:</label>
+      <input type="text" formControlName="TwistRate">
+      <label for="text">LengthOfPull:</label>
+      <input type="text" formControlName="LengthOfPull">
+      <label for="text">BarrelLength:</label>
+      <input type="text" formControlName="BarrelLength">
+      <label for="text">BarrelFinish:</label>
+      <input type="text" formControlName="BarrelFinish">
+      <label for="text">GunFinish:</label>
+      <input type="text" formControlName="GunFinish">
+      <label for="text">AmmoTypeUsed:</label>
+      <input type="text" formControlName="AmmoTypeUsed">
+      <label for="text">LastMaintenanceDate:</label>
+      <input type="text" formControlName="LastMaintenanceDate">
+      <label for="text">GeneralNotes:</label>
+      <input type="text" formControlName="GeneralNotes">
+      <label for="text">Sights:</label>
+      <input type="text" formControlName="Sights">
+      <label for="text">Scope:</label>
+      <input type="text" formControlName="Scope">
+      <label for="text">TypeOfScope:</label>
+      <input type="text" formControlName="TypeOfScope">
+      <label for="text">Laser:</label>
+      <input type="text" formControlName="Laser">
+      <label for="text">TypeOfLaser:</label>
+      <input type="text" formControlName="TypeOfLaser">
+      <label for="text">StockType:</label>
+      <input type="text" formControlName="StockType">
+      <label for="text">TriggerType:</label>
+      <input type="text" formControlName="TriggerType">
+      <label for="text">TriggerPull:</label>
+      <input type="text" formControlName="TriggerPull">
+      <label for="text">CostOfFirearm:</label>
+      <input type="text" formControlName="CostOfFirearm">
+      <label for="text">AnyOtherAccessories:</label>
+      <input type="text" formControlName="AnyOtherAccessories">
+      <label for="text">PreBan:</label>
+      <input type="text" formControlName="PreBan">
+      <label for="text">NFAApprovalDate:</label>
+      <input type="text" formControlName="NFAApprovalDate">
+      <label for="text">NFAPaperworkScanned:</label>
+      <input type="text" formControlName="NFAPaperworkScanned">
+      <label for="text">NameOfTrustOrCorporation:</label>
+      <input type="text" formControlName="NameOfTrustOrCorporation">
+      <label for="text">LocalPoliceApproval:</label>
+      <input type="text" formControlName="LocalPoliceApproval">
+      <label for="text">LocalPoliceStationName:</label>
+      <input type="text" formControlName="LocalPoliceStationName">
+      <label for="text">ModifiedBy:</label>
+      <input type="text" formControlName="ModifiedBy">
+      <label for="text">ModifiedDate:</label>
+      <input type="text" formControlName="ModifiedDate">
+    </fieldset>
+  </div>
+  <button type="submit" (click)="ADDGuns(AddGuns)">Sign Up</button>
+</form>
