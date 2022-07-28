@@ -9,10 +9,10 @@ export class UserservicesService {
   user_Login="https://localhost:44346/api/Token"
 
   constructor(private http:HttpClient) { }
-  RegisterUser(data:any){
+  public RegisterUser(data:any){
     return this.http.post(this.user_Register,data)
   }
-  login(data:any){
+  public login(data:any){
     return this.http.post(this.user_Login,data)
   }
 }

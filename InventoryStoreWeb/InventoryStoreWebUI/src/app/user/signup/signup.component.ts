@@ -33,6 +33,7 @@ export class SignupComponent implements OnInit {
       console.warn(result);
       console.log(result);
       this.route.navigate(['/user/login'])
+      
     })
     
   }
