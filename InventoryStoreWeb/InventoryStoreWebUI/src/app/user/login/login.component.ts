@@ -15,7 +15,7 @@ import { AuthserviceService } from 'src/app/services/authservice.service';
 })
 export class LoginComponent implements OnInit {
   LoginForm: any = FormGroup
-  public token:any
+  public result:any
 
   constructor(private formbuilder: FormBuilder, private myobj: UserservicesService, private http: HttpClient, private route: Router,private authservice:AuthserviceService) {
     this.LoginForm = formbuilder.group({
@@ -33,14 +33,13 @@ export class LoginComponent implements OnInit {
     this.myobj.login( formdata).subscribe((result: any) => {
       if(result.Access_token!==null){
         localStorage.setItem('token',result.Access_token)
+        this.route.navigate(['/user/dashboard'])
         alert("succesfully Login")
       }
       else{
         console.log("invalid user")
       }
       
-    
-      //  const obj= result.Access_token;
       //  this.token=obj
      
       // if(obj!=null){
@@ -52,6 +51,11 @@ export class LoginComponent implements OnInit {
       // }
       
     })
+    
   }
+ public settoken(){
+    localStorage.setItem('istoken',this.result.Access_token)
+  }
+
   
 }
