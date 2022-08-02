@@ -16,9 +16,7 @@ export class DashboardComponent implements OnInit {
     this.AddGuns = formbuilder.group({
       Name: ['', [Validators.required]],
       FirearmType: ['', [Validators.required]],
-      LocalPoliceStationName: ['', [Validators.required]],
-      ModifiedBy: ['', [Validators.required]],
-      ModifiedDate: ['', [Validators.required]],
+      LocalPoliceStationName: ['', [Validators.required]]
     })
   }
 

@@ -31,14 +31,17 @@ export class LoginComponent implements OnInit {
     formdata.append("Username", this.LoginForm.get('Username').value);
     formdata.append("Password", this.LoginForm.get('Password').value);
     this.myobj.login( formdata).subscribe((result: any) => {
-      if(result.Access_token!==null){
-        localStorage.setItem('token',result.Access_token)
-        this.route.navigate(['/user/dashboard'])
-        alert("succesfully Login")
-      }
-      else{
-        console.log("invalid user")
-      }
+      const token = (<any>result).Access_token;
+      localStorage.setItem('jwt',token)
+      this.route.navigate(['/dashboard'])
+      // if(result.Access_token!==null){
+      //   localStorage.setItem('accessToken',result.Access_token)
+      //   this.route.navigate(['/user/dashboard'])
+      //   alert("succesfully Login")
+      // }
+      // else{
+      //   console.log("invalid user")
+      // }
       
       //  this.token=obj
      
@@ -53,9 +56,7 @@ export class LoginComponent implements OnInit {
     })
     
   }
- public settoken(){
-    localStorage.setItem('istoken',this.result.Access_token)
-  }
+
 
   
 }

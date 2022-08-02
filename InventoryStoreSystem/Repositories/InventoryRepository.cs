@@ -52,7 +52,7 @@ namespace InventoryApi.Repositories
                     objAdd.ModifiedDate= DateTime.Now;
                     var update = Builders<Guns>.Update.Set(s => s.Name, objAdd.Name)
                           .Set(s => s.FirearmType, objAdd.FirearmType)
-                        .Set(s => s.LocalPoliceApproval, objAdd.LocalPoliceApproval)
+       
                         .Set(s => s.LocalPoliceStationName, objAdd.LocalPoliceStationName)
                         .Set(s => s.ModifiedBy, objAdd.ModifiedBy)
                         .Set(s => s.ModifiedDate, objAdd.ModifiedDate);

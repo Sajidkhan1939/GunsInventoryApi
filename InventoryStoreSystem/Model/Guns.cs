@@ -12,7 +12,7 @@ namespace InventoryApi.Model
         public string UserId { get; set; }
         public string Name { get; set; }
         public string FirearmType { get; set; }
-        public bool LocalPoliceApproval { get; set; }
+        
         public string LocalPoliceStationName { get; set; }
         public string CreatedBy { get; set; }
         public DateTime? CreatedDate { get; set; }
